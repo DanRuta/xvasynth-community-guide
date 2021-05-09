@@ -13,6 +13,7 @@ Generating lines with [xVASynth](https://github.com/DanRuta/xVA-Synth) is someti
  - If a voice has trouble saying a particular word, try spelling it out phonetically. By that, I mean you should try to spell out the letter sounds, rather than the actual words.
  - Breaking a difficult word down into multiple smaller phonetically correct groups of letters, and shortening the pause between them away can help in some rare situations
  - If a letter sounds "tinny" using the HiFi-GAN, try shortening the offending letter's duration in the editor. For now, unusually long letters aren't converted into audio well enough sometimes
+ - "s" sounds are very audible and don't need a long duration. It sometimes improves quality to shorten these letters, and you won't lose any speech sounds.
 
 
 ## Tips/guides from the community
