@@ -55,6 +55,7 @@ Don't feel constrained by the words you expect the AI to be able to pronounce! I
 If people don't like the way the dialogue comes out, they can create the WAV using one of the voice types that sounds better. Then take the WAV and JSON from the better sounding voice type, and then regenerated it with the voice they wanted....It does require some cutting nad pasting and some manual editing of the JSON, but it does produce a better sound in many cases....For example. The following line sounds better comming from Female Commander than it does Female Even Tone. "Come on. Let's go. Move it."
 
 Default FemaleEvenToned: `audio/scroody_femaleeventoned_default.wav`
+
 Default FemaleCommander: `audio/scroody_femalecommander.wav`
 
 Commander sounds better. Using commander's JSON and editing it for Even tone and regenerating the file, makes Lydia sound a little better.
