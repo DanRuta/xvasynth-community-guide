@@ -9,7 +9,7 @@ To start with, this will mostly contain the raw notes from various people, until
 
 Generating lines with [xVASynth](https://github.com/DanRuta/xVA-Synth) is sometimes good enough as-is. But most of the time, you can drastically improve the quality of audio lines through careful use of the pitch/duration editor. The more you use it, the better you will get at it - it's a skill (sometimes an art...). The kind of changes you need to make can vary between voices, depending on how well the models were trained.
 
- - Always use the bespoke HiFi-GAN if there is one available. Only on rare occasions does WaveGlow sound better, though you can still play around with it - just be careful if mixing the two, as the audio levels are different. You can use the ffmpeg amplitude settings to bring them to the same level. 
+ - Always use the bespoke HiFi-GAN if there is one available. Only on rare occasions does WaveGlow sound better, though you can still play around with it - just be careful if mixing the two, as the audio levels are different. You can use the ffmpeg amplitude settings to bring them to the same level.
  - If a voice has trouble saying a particular word, try spelling it out phonetically. By that, I mean you should try to spell out the letter sounds, rather than the actual words.
  - Breaking a difficult word down into multiple smaller phonetically correct groups of letters, and shortening the pause between them away can help in some rare situations
  - If a letter sounds "tinny" using the HiFi-GAN, try shortening the offending letter's duration in the editor. For now, unusually long letters aren't converted into audio well enough sometimes
@@ -49,6 +49,17 @@ E.G, a micro-pause (stretching the the silence) before - and probably after - an
 ### lillibattenberg
 
 Don't feel constrained by the words you expect the AI to be able to pronounce! In my first ever Vilkas line, I had him ask (phonetically) "what have you done with cass see?", but found out later he can handle "Kassi" just as well. On the other hand, I had to spell "tragically" as "trajikly" to get the tone right, so experiment!
+
+### Scroody
+
+If people don't like the way the dialogue comes out, they can create the WAV using one of the voice types that sounds better. Then take the WAV and JSON from the better sounding voice type, and then regenerated it with the voice they wanted....It does require some cutting nad pasting and some manual editing of the JSON, but it does produce a better sound in many cases....For example. The following line sounds better comming from Female Commander than it does Female Even Tone. "Come on. Let's go. Move it."
+
+Default FemaleEvenToned: `audio/scroody_femaleeventoned_default.wav`
+Default FemaleCommander: `audio/scroody_femalecommander.wav`
+
+Commander sounds better. Using commander's JSON and editing it for Even tone and regenerating the file, makes Lydia sound a little better.
+(with some polishing): `audio/scroody_final.wav`
+
 
 ### Caden
 
