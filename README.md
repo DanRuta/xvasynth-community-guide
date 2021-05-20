@@ -18,7 +18,6 @@ Generating lines with [xVASynth](https://github.com/DanRuta/xVA-Synth) is someti
 
 ## Tips/guides from the community
 
-
 ### D0lphin
 
 The program concatenates phonetic chunks spelled with a hyphen. So if he can't say literature, you could try lit-ra-cherr
@@ -36,6 +35,29 @@ For example, I wouldn't say Seth Green is a mushmouth of a speaker, but he does 
 
 By contrast, Jennifer Hale (FemShep) is a very breathy speaker, so I always pull her "th" "sh" and "h" and usually "r" sounds out.
 
+
+### Para - Reducing Static and tinny artifacts for SKVA generated voices (for Skyrim SE)
+
+<ol>
+ <li>Generate SKVA sample; adjust; save wav to something that makes sense.</li>
+ 
+ <li>Now take this same utterance with the same exact settings and add random punctuation in the middle of it to force a pause. This pause will be filled with some audio artifacts / white noise / static that SKVA generates. </li>
+ <ul>
+  <li>Note: this is especially useful if you’re modifying the global pitch of the utterance from the voiceset’s baseline by decreasing/increasing it when you generate your file in step 1. The white noise will be specific to the pitch at which you’re working for the voice set. For example, if the default voice is at higher pitch and you’re working by decreasing overall pitch in SKVA (by clicking the Decrease button on the whole sentence, rather than each individual phoneme), you will want to match your noise profile to that pitch. This will also depend somewhat on the content of the sentence itself. If your sentence has a lot of sibilants (s sounds), the “tin” noise will likely be on higher frequencies.</li>
+ </ul>
+ <li>Save that file and name it something that makes sense: for example [CharacterName_NoiseProfile.wav]</li>
+ <li>Load both files from step 1 and step 2 into Audacity or the audio processing program of your choice.</li>
+ <li>Go into your noise file from Step 3, and select the blank section where you get static but no vocals. Go to Effects > Noise Reduction, and with that section of white noise still selected/highlighted, click “get profile” or equivalent for your audio program. Save that preset to something that makes sense, for example “SKVA_CharacterName_NoiseBaseline”</li>
+ <li>Go to the wav file generated in Step 1 (the one you’ll be working on). Select all, go to Effects > Noise Reduction and choose the profile you just saved. Click “preview” and listen to the audio. You should have quite a bit of “tin” removed, but you can play around with settings to see what sounds best. Once you’re happy, click Apply.</li>
+ </li>At this point, you might still be getting some unwanted metallic sounds. Those generally will be of two types: low frequency artifacts that make it sound like your character is speaking from the bottom of a metallic cistern, or high frequency “tinny” sounds that make it sound like a walkie talkie. Those unwanted artifacts can be at both low and high frequencies, and while you might not be able to filter them out entirely from speech frequencies without “thinning” the voice too much, you can reduce them a bit by running a Bandpass, where you cutoff everything below 60 Hz and above 10000 Hz (or a little higher or lower depending on how high/low the voice’s baseline pitch is, you can play around with these values to see what sounds best for your specific case)</li>
+ <li>Once you’re satisfied, it’s time to Normalize the audio. This step is important for making sure all your audio files sound the same. If you’re adding just one line of dialogue, then go ahead and Normalize here. Go to Effects > Normalize, click the “Remove DC before Normalizing” and click apply. I run it at something like -3db.</li>
+ <li>Note: If you’re working with multiple files to create a collection of dialogues to plug into your mod, you will want to put them all into one audio track before processing them, then break them apart before preparing them to add to CK.</li>
+ <ul>
+  <li>It helps to generate silences between each clip you’re adding. Go to Generate > Silence, and pick something not too short, like 0.5s. It will make your life easier once you’re ready to parse them back up into individual files. </li>
+  <li>It also helps to keep an eye out for the overall pitch settings you’re using. For example, if you are systematically lowering or raising the pitch from the default model in SKVA, you’ll want to use the same “noise” profile for all your files in that “pitch” collection. You will run through the above steps, but on the whole collated audio file, using the same process on all of them. This will help standardize them, otherwise you will end up with variation between tracks, which you want to avoid if you’re going to plug them into the game.</li>
+  <li>After you’ve collated all your voice set files into one track and removed as much tin as you can, go ahead and do step 8. You might need to adjust the setting (If you’re making voices to use in CK for a mod, you’ll likely be working in the -4db to -2db range to make the loudness approximate the game audio, but see what works for your setup).</li>
+ <ul>
+</ol>
 
 
 ### Shenzy
