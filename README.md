@@ -85,5 +85,7 @@ Commander sounds better. Using commander's JSON and editing it for Even tone and
 
 
 ### Caden
-
+ 
+[via the "Keep editor state on voice change" setting] Sometimes if the line isnt coming out right, I will generate it in another voice, and once it generates right in another voice I go back to the voice I want and it generates close to the same but in the voice that I want
+ 
 Video demonstration of using the tool to generate lines for Skyrim CK: https://www.youtube.com/watch?v=KRFblv7uqtM
