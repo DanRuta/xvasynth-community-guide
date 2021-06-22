@@ -18,6 +18,11 @@ Generating lines with [xVASynth](https://github.com/DanRuta/xVA-Synth) is someti
 
 ## Tips/guides from the community
 
+### Elscrux
+
+Follow this guide for how to easily extract dialogue from Skyrim via xEdit, straight into the correct format for the batch synthesis mode:
+https://docs.google.com/document/d/13rN4yzgE_7UDj9qzURJyKQufxrwev1bzsrSmB437nNI
+
 ### D0lphin
 
 The program concatenates phonetic chunks spelled with a hyphen. So if he can't say literature, you could try lit-ra-cherr
