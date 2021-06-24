@@ -90,6 +90,8 @@ Commander sounds better. Using commander's JSON and editing it for Even tone and
 
 
 ### Caden
+
+If some sentences sound screwed up with any word that end in "ING", just have then remove the "G", example "Trying" sometimes sounds better and continues to the next word better by Typing "Tryin" into the synth. 
  
 [via the "Keep editor state on voice change" setting] Sometimes if the line isnt coming out right, I will generate it in another voice, and once it generates right in another voice I go back to the voice I want and it generates close to the same but in the voice that I want
  
