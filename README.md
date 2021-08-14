@@ -18,6 +18,9 @@ Generating lines with [xVASynth](https://github.com/DanRuta/xVA-Synth) is someti
 
 ## Tips/guides from the community
 
+### Grummulthrus
+The English phoenetic pronounciations on dictionary.com have been amazingly helpful in my use of SKVA so far, saving many hours of work.
+
 ### Elscrux
 
 Follow this guide for how to easily extract dialogue from Skyrim via xEdit, straight into the correct format for the batch synthesis mode:
@@ -39,7 +42,6 @@ Try and get to know your actor's voice in ways other than just how it sounds. Pa
 For example, I wouldn't say Seth Green is a mushmouth of a speaker, but he does let certain sounds "crash" into each other, and I can mimic this by lengthening these sounds and then reducing the time between them.
 
 By contrast, Jennifer Hale (FemShep) is a very breathy speaker, so I always pull her "th" "sh" and "h" and usually "r" sounds out.
-
 
 ### Para - Reducing Static and tinny artifacts for SKVA generated voices (for Skyrim SE)
 
