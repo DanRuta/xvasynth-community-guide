@@ -98,3 +98,9 @@ If some sentences sound screwed up with any word that end in "ING", just have th
 [via the "Keep editor state on voice change" setting] Sometimes if the line isnt coming out right, I will generate it in another voice, and once it generates right in another voice I go back to the voice I want and it generates close to the same but in the voice that I want
  
 Video demonstration of using the tool to generate lines for Skyrim CK: https://www.youtube.com/watch?v=KRFblv7uqtM
+
+### aragonit
+
+Sometimes short sentences sound much better with some words added at the beginning.
+As an  example: "Would be kinda funny" and "That would be kinda funny"
+To use the better inflection of the longer sentence, give the "That" a treatment:  move the energy (the dot) to the bottom, turning the volume to zero, and reduce the length of the audio to the minimum.
