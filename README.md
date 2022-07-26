@@ -4,6 +4,8 @@ This is a continuously changing community resource providing ideas and guides on
 
 To start with, this will mostly contain the raw notes from various people, until it all gets organized a bit better, as content grows. To contribute to this, either DM me links/text, post in [the discord server](https://discord.gg/nv7c6E2TzV) (let me know it's for the guide), or start a pull request directly.
 
+### Note:
+Starting with v2+ models, pronunciation can be explicitly defined using ARPAbet notation. That is now the recommended method to getting the exact pronunciation you're after. These pronunciations can be saved in a dictionary, in the ARPAbet menu.
 
 ## Tips from the author
 
